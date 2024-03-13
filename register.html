@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Registration</title>
+</head>
+<body>
+    <h1>Register for the Chatbot</h1>
+    {% if message %}
+        <p style="color: red;">{{ message }}</p>
+    {% endif %}
+    <form action="/register" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required><br>
+        <label for="password">Password (min. 8 characters):</label>
+        <input type="password" name="password" id="password" required><br>
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" required><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
