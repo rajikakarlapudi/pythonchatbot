@@ -5,7 +5,6 @@ import nltk
 from nltk.corpus import stopwords
 import gunicorn
 
-gunicorn.main()
 
 app = Flask(__name__)
 login_manager = LoginManager()
