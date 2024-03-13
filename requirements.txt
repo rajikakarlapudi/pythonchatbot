@@ -2,4 +2,3 @@ flask
 flask_login
 passlib.hash[bcrypt]
 nltk==3.8.1
-nltk.corpus
