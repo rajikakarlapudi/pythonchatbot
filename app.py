@@ -3,6 +3,9 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 from passlib.hash import bcrypt
 import nltk
 from nltk.corpus import stopwords
+import gunicorn
+
+gunicorn.main()
 
 app = Flask(__name__)
 login_manager = LoginManager()
